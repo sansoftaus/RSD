@@ -1,5 +1,5 @@
 from django.conf.urls import patterns, include, url
-from Remote_Software.views import hello
+from Remote_Software.views import hello, current_datetime, hours_ahead
 
 # Uncomment the next two lines to enable the admin:
 # from django.contrib import admin
@@ -8,6 +8,8 @@ from Remote_Software.views import hello
 urlpatterns = patterns('',
     
     url(r'^hello/$', hello),
+    url(r'^time/$', current_datetime),
+    url(r'^time/plus/(\d{1,2})/$', hours_ahead),
     # Examples:
     # url(r'^$', 'Remote_Software.views.home', name='home'),
     # url(r'^Remote_Software/', include('Remote_Software.foo.urls')),
