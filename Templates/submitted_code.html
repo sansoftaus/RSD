@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title></title>
+    <meta content="">
+    <style></style>
+  </head>
+  
+  <body><h3></b>Submitted Python Code:-</h3>
+  	
+  	{% if message %}
+  	<tr><div class="highlight">
+  		<td style="vertical-align: left" ; text-align: left>
+  		<textarea id="textarea" name="code" cols="80" rows="25" wrap="off">
+  	
+  	    {% for msg in message %}
+		    {{ msg }}
+		{% endfor %}
+		
+		</textarea>
+		</td>
+	</div></tr>
+	{% endif %}
+	
+  </body>
+</html>
