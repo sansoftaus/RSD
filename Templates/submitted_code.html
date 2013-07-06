@@ -10,15 +10,41 @@
   	{% if message %}
   	<tr><div class="highlight">
   		<td style="vertical-align: left" ; text-align: left>
-  		<textarea id="textarea" name="code" cols="80" rows="25" wrap="off">
+  		<textarea id="textarea" name="code" cols="80" rows="15" wrap="on">
   	
-  	    {% for msg in message %}
-		    {{ msg }}
-		{% endfor %}
+  	    {{ message }}
 		
 		</textarea>
 		</td>
 	</div></tr>
+	{% endif %}
+	
+	<br></br>
+	
+	<h3></b>Output:-</h3>
+	{% if output %}
+	<tr><div class="highlight">
+  		<td style="vertical-align: left" ; text-align: left>
+  		<textarea id="textarea" name="code" cols="80" rows="15" wrap="on">
+  			{{ output }}
+  		</textarea></td>
+	</div></tr>
+	{% else %}
+	    
+	    <i>Some Errors in the Code !
+	
+	{% endif %}
+	 
+	<br></br>
+	
+	<h3></i>Code Errors:-</h3>
+	{% if errors %}
+	<tr><div class="highlight">
+  		<td style="vertical-align: left" ; text-align: left>
+  		<textarea id="textarea" name="code" cols="80" rows="15" wrap="on">
+  			{{ errors }}
+  		</textarea></td>
+	</div></tr> 	
 	{% endif %}
 	
   </body>

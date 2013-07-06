@@ -2,7 +2,7 @@ from django import forms
 
 
 class DevelopmentForm(forms.Form):
-    Software_Name = forms.CharField(max_length=100)
+    App_Name = forms.CharField(max_length=100)
     Python_Code = forms.CharField(widget=forms.Textarea)
     
     def clean_Python_Code(self):
