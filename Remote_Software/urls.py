@@ -16,6 +16,7 @@ urlpatterns = patterns('',
     url(r'^Remote_Software_Development/$', Remote_Software_Development),
     url(r'^Submitted_Code/$', Submitted_code),
     url(r'^hello_pdf/$', hello_pdf),
+    url(r'^Submitted_Code/Add_to_dropbox/$', Add_to_dropbox),
     # Examples:
     # url(r'^$', 'Remote_Software.views.home', name='home'),
     # url(r'^Remote_Software/', include('Remote_Software.foo.urls')),
