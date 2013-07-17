@@ -13,5 +13,5 @@ class DevelopmentForm(forms.Form):
         
         num_words = len(message.split())
         if num_words < 4:
-            raise forms.ValidationError("Not enough words!")
+            raise forms.ValidationError("Not enough code!")
         return message    

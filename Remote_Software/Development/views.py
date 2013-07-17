@@ -16,17 +16,17 @@ def Remote_Software_Development(request):
     return render(request, 'Development_form.html', {'form': form})
 
 def Submitted_code(request):
-    #try:
-        Code_Errors = "Code was successfully executed without any Errors!"
-        Code_Output = ""
-        Execute = None
-        file_location = os.getcwd() + "/Remote_Software/App/Code.py"
-        file_object = open(file_location, "rb+")
-        message = "".join(file_object.readlines())    
-        file_object.close()
-        cmd = "python " + file_location
-        #Execute = subprocess.Popen(cmd, stdout=subprocess.STDOUT, stderr = subprocess.PIPE)
-        #Code_Output = Execute.stdout.read() 
-    #except subprocess.CalledProcessError:
-        #Code_Errors = Execute.stderr.read()
-        return render(request, 'submitted_code.html', {'message': message, 'output':"Code_Output", 'errors':Code_Errors})
+    Code_Errors = "App was successfully executed without any Errors!"
+    Code_Output = "App failed to Execute!"
+    Execute = None
+    file_location = os.getcwd() + "/Remote_Software/App/Code.py"
+    file_object = open(file_location, "rb+")
+    message = "".join(file_object.readlines())    
+    file_object.close()
+    Execute = subprocess.Popen(['python', file_location], stdout=subprocess.PIPE, stderr = subprocess.PIPE)
+    Executed_results = Execute.communicate()
+    if Execute.returncode == 0:
+        Code_Output = "".join(Executed_results)
+    else:
+        Code_Errors = "".join(Executed_results)
+    return render(request, 'submitted_code.html', {'message': message, 'output':Code_Output, 'errors':Code_Errors})

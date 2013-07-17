@@ -1,4 +1,3 @@
-import sys, lol
+import lol
 
-print "This is a testing code"
-print "Checking the code again"
+print "Hello"
