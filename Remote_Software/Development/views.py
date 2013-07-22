@@ -64,7 +64,7 @@ def Add_to_dropbox(request):
     dropbox_client = client.DropboxClient(dropbox_sess)
     
     f = open('/home/santee/workspace/Remote_Software/App/Code.py', 'rb')    
-    response = dropbox_client.put_file('/Remote_Software.py', f)
+    response = dropbox_client.put_file('/Remote_Software.py', f, overwrite=True)
     f.close()
     
     return HttpResponse("Your App is successfully uploaded into your DropBox location")

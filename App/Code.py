@@ -1,3 +1,3 @@
 import os
 
-print "This is my First App !!"
+print "Testing phase !!"
