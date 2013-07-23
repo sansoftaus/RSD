@@ -27,7 +27,7 @@ def Remote_Software_Development(request):
             return HttpResponseRedirect('/Submitted_Code')
     else:
         form = DevelopmentForm()            
-    return render(request, 'Development_form.html', {'form': form, 'dropbox': "I dono"})
+    return render(request, 'Development_form.html', {'form': form})
 
 def Submitted_code(request):
     global dropbox_sess
@@ -63,9 +63,21 @@ def Add_to_dropbox(request):
     access_token = dropbox_sess.obtain_access_token(dropbox_request_token)
     dropbox_client = client.DropboxClient(dropbox_sess)
     
-    f = open('/home/santee/workspace/Remote_Software/App/Code.py', 'rb')    
-    response = dropbox_client.put_file('/Remote_Software.py', f, overwrite=True)
+    #Delete if there is any previously created tar files
+    command0 = 'rm -rf ' + os.getcwd() + '/Remote_Software/App/Code.tar'
+    os.system(command0)
+    
+    #Converting the given user code (.py) to an executable using pyinstaller library
+    command1 = 'python '+ os.getcwd() + '/Remote_Software/App/pyinstaller-2.0/pyinstaller.py -D ' + os.getcwd() + '/Remote_Software/App/Code.py'
+    os.system(command1)
+    
+    #The executable directory is compressed through tar 
+    command2 = 'tar -cvf ' + os.getcwd() + '/Remote_Software/App/Remote_Software.tar ' + os.getcwd() + '/Remote_Software/App/pyinstaller-2.0/Code/dist/Code'
+    os.system(command2)
+        
+    f = open('/home/santee/workspace/Remote_Software/App/Remote_Software.tar', 'rb')    
+    response = dropbox_client.put_file('/Remote_Software.tar', f, overwrite=True)
     f.close()
     
-    return HttpResponse("Your App is successfully uploaded into your DropBox location")
+    return HttpResponse("Your App is successfully uploaded into your DropBox location \n Response:- " + str(response))
                         

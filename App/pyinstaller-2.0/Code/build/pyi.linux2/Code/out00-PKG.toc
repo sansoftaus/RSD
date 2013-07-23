@@ -1,0 +1,12 @@
+('/home/santee/workspace/Remote_Software/App/pyinstaller-2.0/Code/build/pyi.linux2/Code/out00-PKG.pkg',
+ {'BINARY': 1,
+  'DATA': 1,
+  'EXECUTABLE': 1,
+  'EXTENSION': 1,
+  'PYMODULE': 1,
+  'PYSOURCE': 1},
+ [('out00-PYZ.pyz', '/home/santee/workspace/Remote_Software/App/pyinstaller-2.0/Code/build/pyi.linux2/Code/out00-PYZ.pyz', 'PYZ'), ('iu', '/home/santee/workspace/Remote_Software/App/pyinstaller-2.0/PyInstaller/loader/iu.pyc', 'PYMODULE'), ('struct', '/usr/lib/python2.7/struct.pyc', 'PYMODULE'), ('archive', '/home/santee/workspace/Remote_Software/App/pyinstaller-2.0/PyInstaller/loader/archive.pyc', 'PYMODULE'), ('_pyi_bootstrap', '/home/santee/workspace/Remote_Software/App/pyinstaller-2.0/support/_pyi_bootstrap.py', 'PYSOURCE'), ('carchive', '/home/santee/workspace/Remote_Software/App/pyinstaller-2.0/PyInstaller/loader/carchive.py', 'PYSOURCE'), ('pyi_rth_encodings', '/home/santee/workspace/Remote_Software/App/pyinstaller-2.0/support/rthooks/pyi_rth_encodings.py', 'PYSOURCE'), ('Code', '/home/santee/workspace/Remote_Software/App/Code.py', 'PYSOURCE')],
+ 1,
+ None,
+ True,
+ 0)

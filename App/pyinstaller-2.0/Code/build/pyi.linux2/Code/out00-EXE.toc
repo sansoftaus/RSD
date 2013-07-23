@@ -1,0 +1,10 @@
+('/home/santee/workspace/Remote_Software/App/pyinstaller-2.0/Code/build/pyi.linux2/Code/Code',
+ True,
+ False,
+ None,
+ None,
+ [],
+ None,
+ True,
+ 0,
+ 1374596052)
