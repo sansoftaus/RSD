@@ -467,7 +467,7 @@ nt: None -> None
   DEL nt
 nt: None -> None
   DEL nt
-__main__: <PyScript '__main__' /home/santee/workspace/Remote_Software/App/pyinstaller-2.0/PyInstaller/loader/iu.py imports=[('sys', 0, 0, -1), ('imp', 0, 0, -1), ('marshal', 0, 0, -1), ('zipimport', 0, 0, -1), ('__builtin__', 1, 0, -1), ('posix', 1, 1, -1), ('posix.stat', 1, 1, -1), ('posix.getcwd', 1, 1, -1), ('posix.environ', 1, 1, -1), ('posix.listdir', 1, 1, -1), ('nt', 1, 1, -1), ('nt.stat', 1, 1, -1), ('nt.getcwd', 1, 1, -1), ('nt.environ', 1, 1, -1), ('nt.listdir', 1, 1, -1)] binaries=[] datas=[]> -> <PyScript '__main__' /home/santee/workspace/Remote_Software/App/Code.py imports=[('os', 0, 0, -1)] binaries=[] datas=[]>
+__main__: <PyScript '__main__' /home/santee/workspace/Remote_Software/App/pyinstaller-2.0/PyInstaller/loader/iu.py imports=[('sys', 0, 0, -1), ('imp', 0, 0, -1), ('marshal', 0, 0, -1), ('zipimport', 0, 0, -1), ('__builtin__', 1, 0, -1), ('posix', 1, 1, -1), ('posix.stat', 1, 1, -1), ('posix.getcwd', 1, 1, -1), ('posix.environ', 1, 1, -1), ('posix.listdir', 1, 1, -1), ('nt', 1, 1, -1), ('nt.stat', 1, 1, -1), ('nt.getcwd', 1, 1, -1), ('nt.environ', 1, 1, -1), ('nt.listdir', 1, 1, -1)] binaries=[] datas=[]> -> <PyScript '__main__' /home/santee/workspace/Remote_Software/App/Hero.py imports=[('os', 0, 0, -1)] binaries=[] datas=[]>
 _emx_link: None -> None
   DEL _emx_link
 _emx_link: None -> None
@@ -518,7 +518,7 @@ org: None -> None
   DEL org
 org: None -> None
   DEL org
-__main__: <PyScript '__main__' /home/santee/workspace/Remote_Software/App/Code.py imports=[('os', 0, 0, -1)] binaries=[] datas=[]> -> <PyScript '__main__' /home/santee/workspace/Remote_Software/App/pyinstaller-2.0/support/rthooks/pyi_rth_encodings.py imports=[('encodings', 0, 0, -1)] binaries=[] datas=[]>
+__main__: <PyScript '__main__' /home/santee/workspace/Remote_Software/App/Hero.py imports=[('os', 0, 0, -1)] binaries=[] datas=[]> -> <PyScript '__main__' /home/santee/workspace/Remote_Software/App/pyinstaller-2.0/support/rthooks/pyi_rth_encodings.py imports=[('encodings', 0, 0, -1)] binaries=[] datas=[]>
 _emx_link: None -> None
   DEL _emx_link
 _emx_link: None -> None

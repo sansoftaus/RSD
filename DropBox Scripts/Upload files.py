@@ -1,8 +1,8 @@
 # Include the Dropbox SDK libraries
 from dropbox import client, rest, session
 
-APP_KEY = 'ar6snxa76ndx5iz'
-APP_SECRET = 'cq1wjz72vdou2bq'
+APP_KEY = 'jgrn1vwmfcp0lpf'
+APP_SECRET = 'reftv8sfas3bte5'
 ACCESS_TYPE = 'app_folder'
 
 sess = session.DropboxSession(APP_KEY, APP_SECRET, ACCESS_TYPE)
